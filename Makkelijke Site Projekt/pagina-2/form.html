@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <title>Hoofdpagina</title>
+  <link rel="stylesheet" href="C:\Users\DOLel\Desktop\Makkelijke Site Projekt\pagina-1\coolestijl.css">   
+
+  <meta name="author" content="David Onischke">
+  <meta name="keywords" content="HTML, CSS">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head> 
+
+<body>
+  <div>
+    <ul class="navbar">
+      <li class="navitem"><a class="navtekst" href="C:\Users\DOLel\Desktop\Makkelijke Site Projekt\pagina-1\Intro.html"> Landpagina</a></li>
+      <li class="navitem"><a class="navtekst" href="C:\Users\DOLel\Desktop\Makkelijke Site Projekt\pagina-2\form.html"> Invulformulier</a></li>
+      <li class="navitem"><a class="navtekst" href="C:\Users\DOLel\Desktop\Makkelijke Site Projekt\pagina-3\grid-galerij.html"> Vorige prestaties</a></li>
+    </ul>
+  </div>
+
+<header>
+  <h1>Bedankt dat je contact met ons op wil nemen!</h1>
+  <h2>
+    We staan altijd open voor: 
+    <strong> "advies, feedback, kritiek, vragen" </strong> 
+    en natuurlijk ook, <em> "solicitaties"</em>.
+  </h2>
+</header>
+
+  <p>
+    De vragenlijst is <strong> bijna compleet optioneel.</strong> 
+    <br /><br />
+    Als je gegevens<strong> niet invult</strong>, 
+    word het gezien als<b> een suggestie of vraag als consument.</b> 
+    <br /><br /> 
+    <strong>
+      Scroll in dat geval helemaal naar beneden, 
+      om je suggestie in te leveren. 
+    </strong>
+      <br /><br />
+    Als je de gegevens <strong> wel invult </strong>, 
+    zullen we het zien als<b> een sollicitatie.</b> 
+  </p>
+  <p>
+    ↓↓↓ Vul <em> beneden</em> je gegevens in. En stel je vraag! ↓↓↓
+  </p>
+
+
+<main>
+<!-- form>
+  <label for="fname">(roep)naam</label>
+  <input type="text" id="fname">
+
+  <label for="lname" >Socials</label>
+  <input type="text" id="lname" placeholder="Discord of andere Social Media">
+
+  <label for="mail-adress">Email</label>
+  <input type="email" id="mail-adress">
+
+  <label for="hoe">Hoe heb je van ons Projekt <strong>(optioneel)</strong></label>
+  <select id="hoe" name="hoe">
+    <option value="school">Via het ROC Almere</option>
+    <option value="pers.">Persoonlijke kennismaking, buiten school</option>
+    <option value="via">Via-via</option>
+    <option value="online">Online</option>
+    <option value="anders">Anders</option>
+    <option value="geen">-geen keuze-</option>
+  </select>
+</form -->
+
+<form action="/receptie-pagina.php">
+  <fieldset>
+    <legend>Vertel ons over jezelf: <strong>(optioneel)</strong></legend>
+
+    <label for="fname">(Roep)Naam</label>
+    <input type="text" id="fname" name="fname" placeholder="Je voornaam"><br><br>
+  
+    <label for="socialmedia">Socials</label>
+    <input type="text" id="socialmedia" name="socialmedia" placeholder="Discord"><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="voorbeeld@email.com"><br><br>
+
+    <label for="phone"><small>Mobiel nummer</small></label>
+    <input type="tel" id="phone" name="phone" placeholder="06-12345678" pattern="[0-9]{2}-[0-9]{8}"><br><br>  
+  
+    <label for="start-code">Wanneer ben je ongeveer begonnen met Coden?</label>
+    <input type="date" id="start-code" name="start-code"><br><br>
+
+
+
+    <p>Wat vind je van de Produkten die we tot nu toe hebben gemaakt??</p>
+    <small><strong> Pro Tip:</strong> Je kan onze <em title="voor nu dan...">'afgemaakte'</em> Projekten bezichtigen in de <a href=> Fotogalerij</a>.</small>
+
+    <div><label for="keuze"><em>5/5</em> Ze zijn vlekkeloos! Ik weet niet zeker of er veel aan toegevoegd kan worden.</label></div>
+    <div><input type="radio" name="keuze" /></div>
+    
+    <div><label for="keuze"><em>4/5</em> Prima applicaties, er is natuurlijk altijd nog ruimte voor verbetering.</label></div>
+    <div><input type="radio" name="keuze" /></div>
+    
+    <div><label for="keuze"><em>3/5</em> Jullie hebben nog een lange weg te gaan, maar het gaat de goede kant op.</label></div>
+    <div><input type="radio" name="keuze" /></div>
+
+    <div><label for="keuze"><em>2/5</em> Het ziet er niet zo goed uit om eerlijk te zijn. Jullie zouden wel hulp van buiten af kunnen gebruiken.</label></div>
+    <div><input type="radio" name="keuze" /></div>
+
+    <div><label for="keuze"><em>1/5</em> Geen commentaar...</label></div>
+    <div><input type="radio" name="keuze" /></div>
+  
+  </fieldset>
+
+
+  <!--https://stackoverflow.com/questions/50687180/how-to-select-all-checkboxes-with-one-button-with-only-html-and-css-->
+  
+  <p>Sollicitatie</p>
+  <fieldset>
+    <legend>Aan wat voor Projekten zou je graag willen werken?</legend>
+
+  <p>Software</p>
+
+    <label for="software"> 'Front-end-web & Offline'</label>
+    <input type="checkbox" name="software" value="Front-end-web & Offline"><br>
+
+    <label for="software"> 'Server & Metadata'</label>
+    <input type="checkbox" name="software" value="Server & Metadata"><br>
+
+    <label for="software"> 'Stijl & Ontwerp'</label>
+    <input type="checkbox" name="software" value="Stijl & Ontwerp"><br>
+
+    <label for="software"> 'Data-hoarding'</label>
+    <input type="checkbox" name="software" value="Data-hoarding"><br>
+
+    <label for="software"> 'Testen'</label>
+    <input type="checkbox" name="software" value="Testen"><br>
+
+    <br><br>
+
+  <p>Hardware</p>
+
+    <label for="hardware"> 'Gebruiksvriendelijkheid'</label>
+    <input type="checkbox" name="hardware" value="Gebruiksvoorwerpen"><br>
+
+    <label for="hardware"> 'Produktie'</label>
+    <input type="checkbox" name="hardware" value="Produktie"><br>
+
+    <label for="hardware"> 'Microprocessor'</label>
+    <input type="checkbox" name="hardware" value="Microprocessor"><br>
+
+    <label for="hardware"> 'Gebruikers-invoer'</label>
+    <input type="checkbox" name="hardware" value="Gebruikers-invoer"><br>
+
+    <label for="hardware"> 'Opslag'</label>
+    <input type="checkbox" name="hardware" value="Opslag"><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Advies, Feedback, Kritiek, Vragen en Sollicitaties</legend>
+    <textarea name="stel-vraag" required maxlength="850" minlength="200" placeholder="Voer hier je suggesties in, maximaal 850 tekens..."></textarea>  
+    <br>
+    <input type="submit" value="Bedankt voor het invullen :-p">
+  </fieldset>  
+
+</form>
+</main>
+
+
+<hr>
+<footer>
+  <p>click <a title=":-O" href="https://www.youtube.com/watch?v=zX8bUhltA3s&ab_channel=JamesChapeskie">hier </a> om terug naar boven te gaan.</p>
+  <p>Gemaakt op: 20.11.2023</p> 
+</footer>      
+</body>
+</html>

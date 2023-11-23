@@ -1,0 +1,44 @@
+Globaal:
+Zelfde styles=
+
+elementen gecentreerd. 
+
+
+
+Plan dag 1:
+
+-Eerst de HTML voor de landpagina afmaken, daarna start CSS 
+
+-Animaties op de landpagina voor de:
+  -ul (word vervangen met de 'echte' waardes die je moet hebben als teamspeler als je er op klikt, misschien kan een grappig klein mannetje je de echte waardes vertellen.)
+  ○-hr (soort van oude filmrol effect)
+	-als je over de hr heen hovert, speelt de filmrol zich af. 
+  -headings (ze komen echt op je af)  
+
+-Wireframe op papier maken 
+  -Landpagina
+
+-Verschillende kleuren en hover kleuren ==
+  -kleurenschema [Het is redelijk gelukt, uiteindelijk heb ik gewoon 1 gradient gebruikt voor iedere pagina...]
+  -hover kleuren 	
+  -tekst kleuren op het kleurenschema
+  -achtergrond gradient, misschien verschillende kleuren van hoge tot lage intensiteit, 
+
+-Styling, alles mooi centreren
+
+-Pagina met de forms elementen
+
+-flexbox nav-bar !! [1]
+  ○-horizontale text align 
+  ○-:hover (achtergrond)kleur veranderd wanneer je er overheen gaat & wanneer je op de <a> tags drukt 
+  ○-link naar de andere pagina's natuurlijk 
+  -valt niet uit elkaar wanneer je inzoomt of naar je mobiele telefoon wisselt.
+  -gekopieërd op alle pagina's
+
+-grid foto gallerij (Misschien met het MAP element)
+
+-Optimalisatie voor andere formaten. vh & vw
+
+-title hover elementen
+
+-Uploaden op GIT!

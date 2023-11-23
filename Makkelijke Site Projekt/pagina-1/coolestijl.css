@@ -1,0 +1,139 @@
+body {
+  background-image: 
+  linear-gradient(
+  rgba(0, 205, 255, 37.5%), 
+  rgba(0, 165, 205, 25%), 
+  rgba(0, 105, 165, 12.5%));    
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: gold;
+  padding: 1rem 1rem;
+  margin: auto auto;
+  list-style-type: none;
+  border-style: round;
+  border-radius: 12px;
+}
+
+/*.navbar:hover {
+  
+}*/
+
+.navitem {
+  padding: 1rem 1rem;
+  max-width: 60%;
+}
+
+.navitem:hover {
+  background-color: yellow;
+}
+
+.navtekst:visited {
+  color: black;
+}
+
+
+/*Centreer de p elementen, zorg ervoor dat de tekst niet zo verspreid is*/
+h1, h2 { 
+  text-align: center;
+}
+
+li, ul {
+  text-align: center;
+}
+
+p, pre {
+  text-align: center;
+  margin: 1% 15% ;
+  font-size: 4rem 4rem; 
+  font-style: oblique;
+  font-weight: auto;
+  width: auto auto;
+}
+
+ul {
+  display: table;
+  list-style-type: hebrew;
+  margin: 0 auto;
+}
+
+/*Splits de elementen op, en geef ze allemaal verschillende style elementen, de 
+'gradient' is afhankelijk van de lokatie op het scherm, hoe dicht ze bij het hoofd
+of de voeten zijn. */
+
+header {
+  color: black;
+}
+
+/*
+header:hover {
+  color:  #FF4B00; 
+  background-color: #108D5A; 
+}*/
+
+main {
+  color: black;
+}
+
+footer {
+  color: black;
+}
+
+
+
+
+hr {
+  border: 16px dashed black; 
+  border-radius: 5px;
+}
+
+/*Geanimeerde lijst*/
+@keyframes film-rol {
+  from {background-color: black;}
+  to {background-color: white;}
+}
+
+hr:hover {
+  animation-name: film-rol;
+  border: 16px dashed black;
+  border-radius: 5px;
+  animation-duration: 12s; 
+  animation-iteration-count: 4;
+}
+
+
+
+a:link {
+  color: rgb(70, 0, 225);
+  text-decoration: none;
+}
+
+a:visited {
+  color: magenta;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+/*Forms pagina*/
+
+textarea {
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 160px;
+  min-height: 160px;
+}

@@ -1,0 +1,40 @@
+forms-pagina: 
+
+-Overal form, label en dan input gebruiken 
+
+-kleine kop en kolom die uitlegt wat er nou loos is ○
+
+
+-Legenda-
+-select [hoe heb je van het projekt gehoord?] ○
+
+-kontakt gegevens formulier (optioneel)(als je geen kontakt gegevens 
+ invult, word je bericht opgeslagen als een suggestie.):
+  -(roep)naam ○
+  -email ○
+  -telefoonnummer ○
+  -discord ○
+
+-radiobutton [wat vond je van de website? Zou je haar aanbevelen?] !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  -de radiobuttons ○
+  -als je over de tekst zweeft, word die gemarkeerd
+  -als je op de tekst drukt, aktiveert die ook de radio knop. 
+
+
+-Legenda-
+-checkbox [aan wat voor projekten zou je graag willen werken?] ○
+  -check alles (hardware of software) X (Mogelijk met CSS magie, ik ga het niet wagen, misschien aan een van de docenten vragen.)
+  -check individueel, maar alsnog opgesplits in die twee grote categorieën 
+
+-sollicitatie & suggestie [textarea]
+  -maximale grootte ○
+  -required ○
+  -checken op inhoud?? (geavanceerd) X (JavaScript funktie)
+
+-bedankt voor het invullen bericht of een 'submit' knop met hetzelfde bericht erop. ○
+
+-footer ○
+
+Posten op GIT!
+Stijl ordenen wanneer je klaar bent  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
