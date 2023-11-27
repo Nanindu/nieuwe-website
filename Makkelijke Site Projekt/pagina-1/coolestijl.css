@@ -1,14 +1,13 @@
 body {
   background-image: 
   linear-gradient(
-  rgba(0, 205, 255, 37.5%), 
-  rgba(0, 165, 205, 25%), 
-  rgba(0, 105, 165, 12.5%));    
+  rgba(0, 255, 255, 25%), 
+  rgba(255, 0, 255, 25%));    
 }
 
 .navbar {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 90%;
   justify-content: space-between;
   align-items: center;
@@ -94,6 +93,7 @@ hr {
 }
 
 /*Geanimeerde lijst*/
+/*
 @keyframes film-rol {
   from {background-color: black;}
   to {background-color: white;}
@@ -106,6 +106,7 @@ hr:hover {
   animation-duration: 12s; 
   animation-iteration-count: 4;
 }
+*/
 
 
 
@@ -136,4 +137,96 @@ textarea {
   min-width: 80%;
   max-height: 160px;
   min-height: 160px;
+}
+
+.linker-kant {
+  text-align: left;
+}
+
+input[type='radio'] {
+  transform: scale(2);
+  /*vertical-align: middle;*/
+}
+
+fieldset {
+  background-image: url("https://www.clker.com/cliparts/4/6/d/f/13421523461065695750crumpled-paper-texture.jpg");
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+legend {
+  background-color: darkslategray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+.soft { grid-area: soft; }
+.hard { grid-area: hard; }
+
+.soft-hard-grid {
+  display: grid;
+  grid-template-areas: 
+  'soft hard';
+  text-align: center;
+}
+
+/*CSS grid pagina (op dit moment maar eentje, de foto-galerij, eigenlijk had ik voor alle pagina's wel grid kunnen gebruiken, achteraf.)*/
+.titel { grid-area: titel; }
+.team { grid-area: team; }
+.dit-ben-ik { grid-area: dit-ben-ik; }
+.wablief { grid-area: wablief; }
+.beëindigd { grid-area: beëindigd; }
+.voeten { grid-area: voeten; }
+.dit-zijn-wij { grid-area: wij; }
+
+.grid-container {
+  display: grid;
+  /*Idee van Billy*/
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  'titel titel titel titel titel titel'
+  /*'team team team team team team'
+  'dit-ben-ik dit-ben-ik dit-ben-ik dit-ben-ik dit-ben-ik dit-ben-ik'*/
+  'wij wij wij wij wij wij'
+  'wablief wablief wablief wablief wablief wablief'
+  'beëindigd beëindigd beëindigd beëindigd beëindigd beëindigd'
+  'voeten voeten voeten voeten voeten voeten';
+  max-width: 100%;
+  padding: 5px;
+}
+
+.dit-zijn-wij {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.grid-container > div {
+  background-image: url("https://www.clker.com/cliparts/4/6/d/f/13421523461065695750crumpled-paper-texture.jpg");
+  text-align: center;
+  padding: auto auto;
+  font-size: 30px;
+  width: auto;
+}
+
+/*Horizontale navbar voor de foto's*/
+div#scroll-container {
+  background-color: #333;
+  overflow: auto;
+  /* overflow: scroll; */
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+/*hover kleur voor title elementen*/
+.hover-kleur:hover {
+  background-color: green;
+  color: white;
 }

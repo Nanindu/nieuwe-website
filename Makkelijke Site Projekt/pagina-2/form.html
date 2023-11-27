@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <title>Hoofdpagina</title>
+  <title>Vragen-formlier</title>
   <link rel="stylesheet" href="C:\Users\DOLel\Desktop\Makkelijke Site Projekt\pagina-1\coolestijl.css">   
 
   <meta name="author" content="David Onischke">
@@ -27,8 +27,8 @@
     en natuurlijk ook, <em> "solicitaties"</em>.
   </h2>
 </header>
-
-  <p>
+<div>
+  <p class="linker-kant">
     De vragenlijst is <strong> bijna compleet optioneel.</strong> 
     <br /><br />
     Als je gegevens<strong> niet invult</strong>, 
@@ -42,9 +42,10 @@
     Als je de gegevens <strong> wel invult </strong>, 
     zullen we het zien als<b> een sollicitatie.</b> 
   </p>
-  <p>
-    ↓↓↓ Vul <em> beneden</em> je gegevens in. En stel je vraag! ↓↓↓
-  </p>
+</div>  
+<br />  
+<p><strong>↓↓↓ Vul <em> beneden</em> je gegevens in. En stel je vraag! ↓↓↓</strong></p>
+<br />
 
 
 <main>
@@ -73,52 +74,53 @@
   <fieldset>
     <legend>Vertel ons over jezelf: <strong>(optioneel)</strong></legend>
 
-    <label for="fname">(Roep)Naam</label>
+    <label for="fname">(Roep)Naam</label><br />
     <input type="text" id="fname" name="fname" placeholder="Je voornaam"><br><br>
   
-    <label for="socialmedia">Socials</label>
+    <label for="socialmedia">Socials</label><br />
     <input type="text" id="socialmedia" name="socialmedia" placeholder="Discord"><br><br>
   
-    <label for="email">Email:</label>
+    <label for="email">Email:</label><br />
     <input type="email" id="email" name="email" placeholder="voorbeeld@email.com"><br><br>
 
-    <label for="phone"><small>Mobiel nummer</small></label>
+    <label for="phone"><small>Mobiel nummer</small></label><br />
     <input type="tel" id="phone" name="phone" placeholder="06-12345678" pattern="[0-9]{2}-[0-9]{8}"><br><br>  
   
-    <label for="start-code">Wanneer ben je ongeveer begonnen met Coden?</label>
+    <label for="start-code">Wanneer ben je ongeveer begonnen met Coden?</label><br />
     <input type="date" id="start-code" name="start-code"><br><br>
 
 
 
     <p>Wat vind je van de Produkten die we tot nu toe hebben gemaakt??</p>
-    <small><strong> Pro Tip:</strong> Je kan onze <em title="voor nu dan...">'afgemaakte'</em> Projekten bezichtigen in de <a href=> Fotogalerij</a>.</small>
+    <small><strong>Tip:</strong> Je kan onze <em title="voor nu dan..." class="hover-kleur">'afgemaakte'</em> Projekten bezichtigen in de <a href=> Fotogalerij</a>.</small>
 
     <div><label for="keuze"><em>5/5</em> Ze zijn vlekkeloos! Ik weet niet zeker of er veel aan toegevoegd kan worden.</label></div>
-    <div><input type="radio" name="keuze" /></div>
+    <div><input type="radio" name="keuze" value="*****"/></div>
     
     <div><label for="keuze"><em>4/5</em> Prima applicaties, er is natuurlijk altijd nog ruimte voor verbetering.</label></div>
-    <div><input type="radio" name="keuze" /></div>
+    <div><input type="radio" name="keuze" value="****"/></div>
     
     <div><label for="keuze"><em>3/5</em> Jullie hebben nog een lange weg te gaan, maar het gaat de goede kant op.</label></div>
-    <div><input type="radio" name="keuze" /></div>
+    <div><input type="radio" name="keuze" value="***"/></div>
 
     <div><label for="keuze"><em>2/5</em> Het ziet er niet zo goed uit om eerlijk te zijn. Jullie zouden wel hulp van buiten af kunnen gebruiken.</label></div>
-    <div><input type="radio" name="keuze" /></div>
+    <div><input type="radio" name="keuze" value="**"/></div>
 
     <div><label for="keuze"><em>1/5</em> Geen commentaar...</label></div>
-    <div><input type="radio" name="keuze" /></div>
-  
+    <div><input type="radio" name="keuze" value="*"/></div>
   </fieldset>
 
 
   <!--https://stackoverflow.com/questions/50687180/how-to-select-all-checkboxes-with-one-button-with-only-html-and-css-->
+  <br />
+  <p><strong>--------Sollicitatie--------</strong></p>
+  <hr>
   
-  <p>Sollicitatie</p>
-  <fieldset>
+  <fieldset class="soft-hard-grid">
     <legend>Aan wat voor Projekten zou je graag willen werken?</legend>
 
+  <div class="soft">   
   <p>Software</p>
-
     <label for="software"> 'Front-end-web & Offline'</label>
     <input type="checkbox" name="software" value="Front-end-web & Offline"><br>
 
@@ -133,11 +135,11 @@
 
     <label for="software"> 'Testen'</label>
     <input type="checkbox" name="software" value="Testen"><br>
+  </div>  
+    <!--br><br-->
 
-    <br><br>
-
+  <div class="hard">  
   <p>Hardware</p>
-
     <label for="hardware"> 'Gebruiksvriendelijkheid'</label>
     <input type="checkbox" name="hardware" value="Gebruiksvoorwerpen"><br>
 
@@ -152,10 +154,13 @@
 
     <label for="hardware"> 'Opslag'</label>
     <input type="checkbox" name="hardware" value="Opslag"><br>
+  </div>  
   </fieldset>
 
+  <br /><br />
+
   <fieldset>
-    <legend>Advies, Feedback, Kritiek, Vragen en Sollicitaties</legend>
+    <legend style="text-align: center;">Advies, Feedback, Kritiek, Vragen en Sollicitaties</legend>
     <textarea name="stel-vraag" required maxlength="850" minlength="200" placeholder="Voer hier je suggesties in, maximaal 850 tekens..."></textarea>  
     <br>
     <input type="submit" value="Bedankt voor het invullen :-p">

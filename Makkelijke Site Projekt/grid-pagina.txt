@@ -1,0 +1,24 @@
+grid-gallerij:
+
+-wireframe maken =
+  -header
+  -gallerij 
+  -beschrijvingen die bij de foto's horen
+  -misschien hyperlinks naar andere 
+
+****************************************** 
+
+-wireframe formaat kiezen =
+grid-template-areas:
+'header header header'
+'menu menu menu'
+'footer footer footer'; ○
+	|| 
+grid-template-columns: 25% 25% 25% 25%;
+
+******************************************
+
+-foto's selecteren = 
+  -passende categorieën voor de verschillende foto's 
+  -border style
+  -

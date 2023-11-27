@@ -42,3 +42,27 @@ Plan dag 1:
 -title hover elementen
 
 -Uploaden op GIT!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vrijdag!
+
+
+-grid en flexbox optimaliseren voor mobiel gebruik.
